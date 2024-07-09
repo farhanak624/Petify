@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes smooth-appear {
+    from {
+      right: 60%;
+      top: 1%;
+  
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      opacity: 0.5;
+    }
+    to {
+      right: 47%;
+      background: none;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      opacity: 1;
+    }
+  }
+  .absolutes {
+    top: 10%;
+    right: 60%;
+    display: none;
+    opacity: 0.5;
+    z-index: -10;
+  }
+  .absolutes:hover {
+    right: 47%;
+    background: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  }
+  .hover:hover + .absolutes {
+    display: block;
+    animation: smooth-appear 1s ease forwards;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  .custom-datepicker {
+    width: 100%; /* Set your custom width */
+    height: 100%; /* Set your custom height */
+    border: none;
+  
+    background-color: transparent;
+    /* Set your custom border radius */
+    outline: none; /* Remove the outline */
+  }
+  .slide-in {
+    transform: translateX(0);
+    transition: transform 1s ease;
+  }
+  
+  .slide-out {
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+  }
+
+ 
+  /* Remove the default appearance of the checkbox */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin-left: 4px;
+  margin-top: 6px;
+  margin-bottom: -2px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Custom tick color and background when checked */
+input[type="checkbox"]:checked {
+  margin-top: 6px;
+  background-color: rgba(245, 137, 90, 1); /* Orange background */
+  border: 2px solid rgba(245, 137, 90, 1);
+}
+
+/* Custom tick mark */
+input[type="checkbox"]:checked:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Style on hover */
+input[type="checkbox"]:hover {
+  border: 2px solid #aaa;
+}
+
+/* Optional: Focus state */
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px rgba(245, 137, 90, 1);
+}
+.scroll-none {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "Roboto";
+}
+select {
+  /* appearance: none; */
+  /* background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); */
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+select option {
+  padding: 2rem;
+  height: 5rem;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+select option:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+select option:checked {
+  background-color: #d1d5db;
+  color: #111827;
+}
+select::-moz-focus-inner {
+  border: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+select:focus > option:checked { 
+  background: #e5e7eb !important;
+}
+/* customMultiselect.css */
+.multiselect-container .option:hover {
+  background-color: #F5895A !important;
+  color: #FFFFFF !important;
+}
+
+.multiselect-container .chip {
+  background-color: #F5895A !important;
+  color: #FFFFFF !important;
+}
+.PhoneInputCountryIcon {
+  width: 1.5em;  /* Adjust this value to change the width */
+  height: 1.5em; /* Adjust this value to change the height */
+}
+
+.PhoneInputCountryIconImg {
+  width: 100%;
+  height: 100%;
+}
+.PhoneInput {
+  display: flex;
+  align-items: center;
+}
+
+.PhoneInputCountry {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding-right: 0.5em;
+}
+
+.PhoneInputCountrySelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.PhoneInputCountryIcon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  color: #374151; /* Adjust this color as needed */
+}
+.menu-button {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fbf1ec;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.menu-button:hover {
+  background-color: #f3f4f6;
+}
+
+.edit-button {
+  transition-delay: 0ms;
+}
+
+.delete-button {
+  transition-delay: 50ms;
+}
+
+div:hover .menu-button {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

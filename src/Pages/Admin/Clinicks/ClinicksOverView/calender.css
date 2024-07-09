@@ -1,0 +1,48 @@
+.css-1az34od-MuiTableCell-root.MuiTableCell-body {
+    border-left: 0px rgba(0, 0, 0, 0.12) solid !important;
+    height: 55px !important;
+    width: 54px !important;
+    max-width:  58px !important;
+    min-height: 30px !important;
+    padding: 4px !important;
+  }
+  .css-1az34od-MuiTableCell-root{
+    border-bottom : 0px solid rgba(224, 224, 224, 1) !important
+  }
+  .css-mwp9p2-MuiPaper-root{
+    border : 0px solid rgba(224, 224, 224, 1) !important
+  }
+  .css-1q0fni6-MuiButtonBase-root-MuiButton-root{
+    min-width: 74px !important;
+  }
+  .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-1.MuiGrid-grid-sm-true.MuiGrid-grid-md-true.css-11ld5zy-MuiGrid-root::before {
+    content: "Prefered Date"; /* Content to be added before the element */
+    display: block; /* Make it a block element */
+    font-size: 19px; /* Adjust font size as needed */
+    color: #333; /* Adjust color as needed */
+    margin-top: 4px; /* Adjust margin as needed */
+    font-weight: 500;
+}
+@media (min-width: 1200px) {
+
+        .css-11ld5zy-MuiGrid-root {
+            display: flex !important;
+            justify-content: space-between !important;
+            min-width: 100% !important;
+        }}
+  /* .css-1a8fl8v-MuiTypography-root{
+    justify-content: end !important;
+    width: 100% !important;
+  } */
+  .css-toho8z{
+    position: relative !important;
+  }
+  .css-1umghk-MuiPaper-root{
+    position: absolute !important;
+    top: 30%;
+    left: 20%;
+    width: 60% !important;
+    border-radius: 100% !important;
+    border: 1px solid rgba(238, 81, 88, 0.5);
+    height: 55% !important;
+  }
